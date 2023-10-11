@@ -161,3 +161,10 @@ try:
     ENV_REGISTRY["sisl"] = RLlibSISL
 except Exception as e:
     ENV_REGISTRY["sisl"] = str(e)
+
+try:
+    from marllib.envs.base_env.soccer import RLlibSoccer
+
+    ENV_REGISTRY["soccer"] = RLlibSoccer
+except Exception as e:
+    ENV_REGISTRY["soccer"] = str(e)
